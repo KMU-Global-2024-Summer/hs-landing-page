@@ -3,56 +3,51 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FUP (FreshUp) - Stay Updated</title>
+<title>FUP (FreshUp)</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="tabs">
-  <button class="tablinks" onclick="openTab(event, 'Home')">Home</button>
-  <button class="tablinks" onclick="openTab(event, 'About')">About</button>
-  <button class="tablinks" onclick="openTab(event, 'Features')">Features</button>
-  <button class="tablinks" onclick="openTab(event, 'Contact')">Contact</button>
+<div class="parallax-window" style="background-image: url('header-bg.jpg');">
+    <div class="header-text">
+        <h1>FUP (FreshUp)</h1>
+        <p>Stay updated with confidence.</p>
+    </div>
 </div>
 
-<div id="Home" class="tabcontent">
-  <h2>Welcome to FUP (FreshUp)</h2>
-  <p>Your solution to staying updated with the most reliable and current information online.</p>
+<div class="content">
+    <h2>Problem Statement</h2>
+    <p>When educational materials and information online become outdated, FUP detects and alerts users, reducing learning or research disruptions and improving the internet user experience.</p>
+    
+    <h2>Our Solution</h2>
+    <p>FUP ensures reliability and personalization in the information flow, saving valuable time and providing easy maintenance, thereby enhancing social connections and keeping up with trends and market dynamics.</p>
+    
+    <h2>Validation of the Problem</h2>
+    <p>Users face confusion with outdated information, such as old health advisories or legal documents. FUP's timely updates provide reliability and prevent misinformation.</p>
+
+    <h2>Market Opportunity</h2>
+    <p>With a TAM encompassing all online platforms and a serviceable market in the millions, FUP's potential market share is significant, given the universal need for updated information.</p>
+
+    <h2>Competitive Landscape</h2>
+    <p>FUP stands out with its automated, real-time updates and personalized services compared to Google Alerts, Talkwalker Alerts, Brand24, and Awario, setting a new standard in information accuracy and user experience.</p>
 </div>
 
-<div id="About" class="tabcontent">
-  <h2>About FUP</h2>
-  <p>Learn more about our mission to enhance the internet user experience by providing timely updates.</p>
+<div class="parallax-window" style="background-image: url('features-bg.jpg');">
+    <div class="feature-text">
+        <h2>Features</h2>
+        <p>Discover the innovative features of FUP that keep you ahead of the curve.</p>
+    </div>
 </div>
 
-<div id="Features" class="tabcontent">
-  <h2>Features</h2>
-  <ul>
-    <li>Real-Time Updates</li>
-    <li>Personalized Alerts</li>
-    <li>User-Friendly Interface</li>
-  </ul>
-</div>
+<!-- Additional content sections would go here -->
 
-<div id="Contact" class="tabcontent">
-  <h2>Contact Us</h2>
-  <p>Have questions or feedback? Get in touch with us.</p>
-</div>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="parallax.min.js"></script>
 <script>
-function openTab(evt, tabName) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(tabName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
+  // Parallax.js script for the parallax effect
+  $(document).ready(function(){
+    $('.parallax-window').parallax({imageSrc: '/path/to/image.jpg'});
+  });
 </script>
 
 </body>
