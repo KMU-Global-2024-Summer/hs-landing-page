@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FUP (FreshUp) - Stay Updated</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="tabs">
+  <button class="tablinks" onclick="openTab(event, 'Home')">Home</button>
+  <button class="tablinks" onclick="openTab(event, 'About')">About</button>
+  <button class="tablinks" onclick="openTab(event, 'Features')">Features</button>
+  <button class="tablinks" onclick="openTab(event, 'Contact')">Contact</button>
+</div>
+
+<div id="Home" class="tabcontent">
+  <h2>Welcome to FUP (FreshUp)</h2>
+  <p>Your solution to staying updated with the most reliable and current information online.</p>
+</div>
+
+<div id="About" class="tabcontent">
+  <h2>About FUP</h2>
+  <p>Learn more about our mission to enhance the internet user experience by providing timely updates.</p>
+</div>
+
+<div id="Features" class="tabcontent">
+  <h2>Features</h2>
+  <ul>
+    <li>Real-Time Updates</li>
+    <li>Personalized Alerts</li>
+    <li>User-Friendly Interface</li>
+  </ul>
+</div>
+
+<div id="Contact" class="tabcontent">
+  <h2>Contact Us</h2>
+  <p>Have questions or feedback? Get in touch with us.</p>
+</div>
+
+<script>
+function openTab(evt, tabName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+
+</body>
+</html>
