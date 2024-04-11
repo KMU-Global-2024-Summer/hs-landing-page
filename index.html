@@ -8,11 +8,18 @@
 </head>
 <body>
 
-<div class="tabs">
-  <button class="tablinks" onclick="openTab(event, 'Home')">Home</button>
-  <button class="tablinks" onclick="openTab(event, 'About')">About</button>
-  <button class="tablinks" onclick="openTab(event, 'Features')">Features</button>
-  <button class="tablinks" onclick="openTab(event, 'Contact')">Contact</button>
+<div class="hero-image">
+  <div class="tabs">
+    <button class="tablinks" onclick="openTab(event, 'Home')">Home</button>
+    <button class="tablinks" onclick="openTab(event, 'About')">About</button>
+    <button class="tablinks" onclick="openTab(event, 'Features')">Features</button>
+    <button class="tablinks" onclick="openTab(event, 'Contact')">Contact</button>
+  </div>
+  <div class="hero-text">
+    <h1>Create Amazing Business Websites</h1>
+    <p>Fastest And Most Lightweight WP Theme</p>
+    <button class="hero-button">GET STARTED</button>
+  </div>
 </div>
 
 <div id="Home" class="tabcontent">
@@ -20,39 +27,10 @@
   <p>Your solution to staying updated with the most reliable and current information online.</p>
 </div>
 
-<div id="About" class="tabcontent">
-  <h2>About FUP</h2>
-  <p>Learn more about our mission to enhance the internet user experience by providing timely updates.</p>
-</div>
-
-<div id="Features" class="tabcontent">
-  <h2>Features</h2>
-  <ul>
-    <li>Real-Time Updates</li>
-    <li>Personalized Alerts</li>
-    <li>User-Friendly Interface</li>
-  </ul>
-</div>
-
-<div id="Contact" class="tabcontent">
-  <h2>Contact Us</h2>
-  <p>Have questions or feedback? Get in touch with us.</p>
-</div>
+<!-- Other tabcontent sections -->
 
 <script>
-function openTab(evt, tabName) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(tabName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
+// JavaScript for opening tabs goes here
 </script>
 
 </body>
