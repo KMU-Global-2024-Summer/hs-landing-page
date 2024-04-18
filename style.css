@@ -1,39 +1,42 @@
 body, html {
   height: 100%;
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4; /* Light grey background */
 }
 
-.parallax-window {
-  height: 300px;
-  background: #333; /* Placeholder for background image */
-  color: #fff;
+.container {
+  width: 80%;
+  margin: 0 auto; /* Center container */
+}
+
+.hero {
+  background-color: #333; /* Dark background for contrast */
+  color: white;
   text-align: center;
-  padding-top: 100px;
+  padding: 50px 0;
 }
 
-/* Replace the background-color with an actual image in the final product */
-[data-background-image] {
-  background: #333; /* Placeholder color */
-  background-image: url('path-to-image.jpg'); /* The path to the image file */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.section {
+  margin-bottom: 50px;
 }
 
-.content {
-  padding: 50px 15%;
+.problem-statement, .solution, .validation, .market-opportunity {
+  background-color: #fff; /* White background for content sections */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
-.problem-statement, .our-solution, .validation, .market-opportunity, .competitive-landscape {
-  margin-bottom: 40px;
+.image-placeholder {
+  background-color: #ddd; /* Grey placeholder for images */
+  height: 300px; /* Fixed height, adjust as necessary */
+  width: 100%;
+  margin: 30px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: italic;
 }
 
-.feature-text {
-  padding: 50px;
-  background: #555; /* Placeholder for background image */
-  color: #fff;
-}
-
-/* Add additional styles for other components as needed */
+/* Additional CSS as needed... */
