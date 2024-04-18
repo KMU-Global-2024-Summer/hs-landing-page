@@ -51,26 +51,31 @@ nav ul li a {
   margin-bottom: 2rem;
 }
 
-.btn {
-  display: inline-block;
-  background-color: #a0d468;
-  color: #fff;
-  text-decoration: none;
-  padding: 0.8rem 2rem;
-  border-radius: 4px;
-  font-weight: bold;
-}
-
-.product-images {
+.solutions {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 1rem;
-  padding: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  margin-top: 3rem;
 }
 
-.product-image img {
-  width: 100%;
-  height: auto;
+.solution {
+  background-color: #fff;
+  padding: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.solution h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.solution-icon {
+  width: 80px;
+  height: 80px;
+  background-color: #a0d468;
+  border-radius: 50%;
+  margin: 0 auto 1rem;
 }
 
 /* Footer styles */
